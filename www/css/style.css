@@ -1,1 +1,32 @@
 /* Empty. Add your own CSS if you like */
+.answered-0 .answer-0, 
+.answered-1 .answer-1, 
+.answered-2 .answer-2, 
+.answered-3 .answer-3 {
+	background-color: red;
+}
+.correctAnswer-0 .answer-0,
+.correctAnswer-1 .answer-1,  
+.correctAnswer-2 .answer-2, 
+.correctAnswer-3 .answer-3 {
+	background-color: green !important;
+}
+
+.button-container{
+}
+
+.question-description{
+	padding-bottom: 20vh;
+}
+
+.question-pushdown{
+	text-align: center !important;
+	position: relative;
+	height: 20vh;
+}
+
+.question-span{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 19vh;
+}

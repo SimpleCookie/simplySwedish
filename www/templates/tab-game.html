@@ -1,0 +1,14 @@
+<ion-view view-title="Play">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="Game in questions" type="item-text-wrap" href="#/tab/Game/{{Game.id}}">
+        <h2>{{Game.description}}</h2>
+        <p>{{Game.answer}}</p>
+        <p>{{Game.fakeAnswer1}}</p>
+        <p>{{Game.fakeAnswer2}}</p>
+        <p>{{Game.fakeAnswer3}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

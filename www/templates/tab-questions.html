@@ -1,0 +1,34 @@
+<ion-view view-title="Play">
+	<ion-content class="padding" type="item-text-wrap" ng-init="question=getRandom()" ng-click="question=nextQuestion()" ng-class="answered" >
+		<div class="row question-description">
+			<h2>{{question.description}}</h2>
+		</div>
+		<div class="row question-pushdown">
+	  		<div class="col answer-0 button button-calm " ng-click="submit(question, 0)" >
+	  			<span class="question-span">
+	  				{{question.answers[0]}}
+	  			</span>
+	  		</div>
+			<div class="col answer-1 button button-calm col-offset-10" ng-click="submit(question, 1)" >
+				<span class="question-span">
+					{{question.answers[1]}}
+				</span>
+			</div>
+		</div>
+		<div class="row">
+	  		<div class="col"></div>
+		</div>
+		<div class="row question-pushdown">
+			<div class="col answer-2 button button-calm " ng-click="submit(question, 2)">
+				<span class="question-span">
+					{{question.answers[2]}}
+				</span>
+			</div>
+			<div class="col answer-3 button button-calm col-offset-10" ng-click="submit(question, 3)">
+				<span class="question-span">
+					{{question.answers[3]}}
+				</span>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
